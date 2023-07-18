@@ -1,0 +1,584 @@
+*{
+  margin: 0;
+  padding:0 ;
+  
+}
+body{
+  background-image: url("https://cdn271.picsart.com/320b8034-784b-4080-8e27-f1458c8c6160/426827136045201.jpg?to=crop&type=webp&r=1456x1154&q=85");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background: #2b7029;
+}
+body::-webkit-scrollbar-thumb {
+  background-color:#8EFF8B;
+  border-radius: 22px;
+  border: 2px solid #376436;
+}
+header{
+  margin-bottom: 15px;
+}
+.banner{
+  width: 100%;
+  box-shadow: 4px 4px 8px(4, 32, 0); 
+}
+.logobanner{
+  width: 100%;
+  height: 170px;
+  box-shadow: 4px 4px 15px 2px rgb(11, 78, 3); 
+}
+.barsection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.locationbarr{
+  margin-top: 10px;
+  list-style: none;
+}
+.locationinfo{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 10px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  border: solid 2px #8EFF8B;;
+  background-color: #042000;
+  font-size: 6px;
+  word-wrap: break-word;
+}
+.locationinfo div{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  
+}
+nav{
+  margin-bottom: 15px;
+}
+.navsection{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  
+}
+.searcher{
+  height: 25px;
+  display: flex;
+  border:solid 2px #45e240;
+}
+.searcher .tipeador{
+  width: 210px;
+  height: 100%;
+  border-style: none;
+  background-color: #8fff8b0c;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 8px;
+}
+.searcher input {
+  padding-left: 5px;
+}
+::placeholder {
+  font-size: 8.5px;
+}
+.searcher .searchbutton{
+  height:100%;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+  background-color: #2b7029;
+  color: rgb(210, 231, 216);
+  padding: 5px;
+  cursor: pointer;
+}
+.searcher .searchbutton:hover{
+background-color: #54c250;
+color: rgb(1, 8, 3);;
+}
+.lupita{
+  font-size: 20px;
+}
+.suggerences{
+  background-color: #000;
+}
+.ResidentsDates{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1%;
+  
+}
+.residentCard{
+  display: flex;
+  border: solid 2px #8EFF8B;
+  box-shadow: 2px 5px 10px 5px black;
+  margin-bottom: 15px;
+  max-width: 100%;
+  width: 270px;
+  height: 400px;
+  word-wrap: break-word;
+  
+}
+.residentInfo{
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  flex-direction: column;
+  color: antiquewhite;
+  max-width: 100%;
+}
+.residentInfo img{
+  width: 270px;
+  height: 250px;
+  object-fit: cover;
+}
+.residentInfo .name{
+  padding: 10px 7px;
+}
+.hrcard{
+  display: flex;
+  position: relative;
+  left: 25%;
+  width: 50%;
+}
+.residentsDescription{
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  font-size: 10px;
+  justify-content: space-evenly;
+}
+.residentsDescription div{
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+}
+.residentCard .status {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.residentCard .status h2{
+  font-size: 12px;
+  border: solid 1px ;
+  padding: 5px;
+  background-color: #54b151;
+  box-shadow: 3px 3px 0px #24ad12;
+}
+.residentCard .status h3 {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  font-size: 15px;
+  right: 35%;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px #54b15104;
+  transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+.residentCard .status:hover h3 {
+  visibility: visible;
+  opacity: 1;
+  background-color: #00000000;
+}
+.dead{
+  color: darkred;
+  font-size: 20px;
+}
+.alive{
+  color: #00ff15;
+  font-size: 20px;
+}
+.residentsDescription h2{
+  font-size: 12px;
+}
+.residentsDescription h3{
+  font-size: 14px;
+}
+.pages{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  gap: 5px;
+}
+.buttonspages{
+  display: flex;
+  justify-content: center;
+  width: 300px;
+}
+.buttons{
+  border-style:none ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #032c0a63;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  border: solid 1px;
+  padding: 2px 2px;
+  width: 25px;
+  color: #67a365;
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.795);
+  cursor: pointer;
+}
+.buttons:hover{
+  background-color: #54c250;
+  color: rgb(1, 8, 3);;
+  }
+.buttonbef{
+  border-style: none;
+  background-color: #00ff1500;
+  color: #376436;
+  font-size: 25px;
+  cursor: pointer;
+}
+.buttonbef:hover{
+  color: #54b151;
+}
+.buttonaft{
+  border-style: none;
+  background-color: #00ff1500;
+  color: #376436;
+  font-size: 25px;
+  cursor: pointer;
+}
+.buttonaft:hover{
+  color: #54b151;
+}
+.hrbody{
+  display: flex;
+  position: relative;
+  left: 25%;
+  width: 50%;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 150px;
+}
+.infofooter{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  color: aquamarine;
+}
+.infofooter .creator{
+  display: flex;
+  gap: 10px;
+}
+/*Loader*/
+.loader-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+}
+.loader {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  background-color: #000;
+  overflow: hidden;
+}
+.character {
+  position: absolute;
+  top: 52%;
+  left: -100px;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  animation: walk 7s linear infinite;
+  z-index: 1;
+}
+.character img{
+  height: 80px;
+  transform: scaleX(-1);
+}
+.portal {
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  z-index: 0;
+}
+.portal-left {
+  right: 0;
+  transform: scaleX(-1);
+}
+.portal-right {
+  left: 0%;
+}
+.portal img{
+height: 100px;
+}
+.texto{
+  position: absolute;
+  top: 45%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  font-family: 'Press Start 2P', cursive;
+  gap: 5px;
+  z-index: 2;
+}
+.texto h1{
+  color: #00ff15;
+}
+.texto h2{
+  display: flex;
+  align-items: flex-end;
+  color: #00ff15;
+}
+/*mensaje de no hay habitantes*/
+.noResidents{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  gap: 50px;
+  width: 100%;
+}
+.noResidentsMenssage{
+  width: 100%;
+  font-size: 10px;
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  gap:20px;
+  animation: latidos .5s infinite;
+}
+.noResidentsMenssage img{
+  height: 150px;
+}
+.hrexample{
+  display: flex;
+  position: relative;
+  width: 50%;
+}
+@keyframes latidos {
+  from { transform: none; }
+  50% { transform: scale(1.1); }
+  to { transform: none; }
+}
+/*Resident card ejemplos*/
+.sectionExample{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+.sectionExample p{
+  width: 80%;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  text-align: center;
+}
+.residentCardExample{
+  display: flex;
+  border: solid 2px #8EFF8B;
+  box-shadow: 2px 5px 10px 5px black;
+  margin-bottom: 15px;
+  max-width: 100%;
+  width: 270px;
+  height: 400px;
+  
+}
+.residentInfoExample{
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  flex-direction: column;
+  color: antiquewhite;
+  max-width: 100%;
+  font-size: 12px;
+}
+.residentInfoExample img{
+  width: 270px;
+  height: 250px;
+  object-fit: cover;
+}
+.residentInfoExample .nameExample{
+  padding: 10px 7px;
+}
+.residentsDescriptionExample{
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  font-size: 10px;
+  justify-content: space-evenly;
+}
+.residentsDescriptionExample div{
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+}
+.residentCardExample .statusExample {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.residentCardExample .statusExample h2{
+  font-size: 12px;
+  border: solid 1px ;
+  padding: 5px;
+  background-color: #54b151;
+  box-shadow: 3px 3px 0px #24ad12;
+}
+.residentCardExample .statusExample h3 {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  font-size: 15px;
+  right: 35%;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px #54b15104;
+  transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+.residentCardExample .statusExample:hover h3 {
+  visibility: visible;
+  opacity: 1;
+  background-color: #00000000;
+}
+@keyframes walk {
+  0% { left: 0; opacity: 0; }
+  4% { opacity: 1; }
+  93% { opacity: 1; }
+  96% { left: calc(100% - 100px); opacity: 0; }
+  100% { right: 0; opacity: 0; }
+}
+/*medias*/
+@media screen and (min-width: 600px) {
+  .logobanner{
+      height: 220px;
+  }
+  .locationinfo{
+      padding: 20px 20px;
+      gap: 20px;
+      font-size: 7px;
+  }
+  .searcher .tipeador{
+      width: 340px;
+  }
+  ::placeholder {
+      font-size: 10px;
+  }
+  /*Loader*/
+  .character img{
+      height: 100px;
+  }
+  .portal img{
+  height: 120px;
+  }
+}
+@media screen and (min-width: 830px) {
+  .logobanner{
+      height: 300px;
+  }
+  .locationinfo{
+      
+      font-size: 12px;
+  }
+  .residentCard{
+      width: 340px;
+      height: 520px;
+  }
+  .residentInfo img{
+      width: 340px;
+      height: 320px;
+  }
+  .noResidentsMenssage{
+      margin-top: 15px;
+      font-size: 15px;
+  }
+  .noResidentsMenssage img{
+      height: 250px;
+  }
+  .sectionExample p{
+      font-size: 15px;
+  }
+  .residentCardExample{
+      width: 440px;
+      height: 620px;
+  }
+  .residentInfoExample img{
+      width: 440px;
+      height: 420px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .logobanner{
+      height: 380px;
+  }
+  .locationinfo{
+      padding: 35px 40px;
+      font-size: 14px;
+  }
+  .loader {
+      width: 70%;
+  }
+}
+@media screen and (min-width: 1255px) {
+  .logobanner{
+      height: 460px;
+  }
+  .locationinfo{
+      font-size: 16px;
+  }
+  .loader {
+      width: 60%;
+  }
+}
+@media screen and (min-width: 1420px) {
+  .logobanner{
+      height: 540px;
+  }
+  .locationinfo{
+      padding: 40px 40px;
+      font-size: 18px;
+  }
+  .searcher .tipeador{
+      width: 440px;
+  }
+  ::placeholder {
+      font-size: 12px;
+  }
+  .loader {
+      width: 50%;
+  }
+}
